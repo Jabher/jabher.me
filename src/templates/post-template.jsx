@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import PostTemplateDetails from '../components/PostTemplateDetails';
 
 class PostTemplate extends React.Component {
-  render() {
+  render () {
     const { title, subtitle } = this.props.data.site.siteMetadata;
     const post = this.props.data.markdownRemark;
     const { title: postTitle, description: postDescription } = post.frontmatter;

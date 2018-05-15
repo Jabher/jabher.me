@@ -4,7 +4,7 @@ import Sidebar from '../components/Sidebar';
 import TagTemplateDetails from '../components/TagTemplateDetails';
 
 class TagTemplate extends React.Component {
-  render() {
+  render () {
     const { title } = this.props.data.site.siteMetadata;
     const { tag } = this.props.pathContext;
 

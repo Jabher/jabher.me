@@ -1,32 +1,26 @@
 module.exports = {
   siteMetadata: {
-    url: 'https://lumen.netlify.com',
-    title: 'Blog by John Doe',
-    subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    url: 'https://jabher.me',
+    title: 'Blog by Vsevolod Rodionov',
+    subtitle: 'JavaScript cutup: frontend, node.js, weird stuff, weird ideas',
     copyright: '© All rights reserved.',
     disqusShortname: '',
     menu: [
       {
-        label: 'Articles',
+        label: 'Blog',
         path: '/'
       },
       {
         label: 'About me',
-        path: '/about/'
-      },
-      {
-        label: 'Contact me',
-        path: '/contact/'
+        path: '/about'
       }
     ],
     author: {
-      name: 'John Doe',
-      email: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '#',
-      vk: '#'
+      name: 'Vsevolod Rodionov',
+      email: 'vsevolod.rodionov@gmail.com',
+      telegram: 'jabher',
+      twitter: 'jabher',
+      github: 'jabher'
     }
   },
   plugins: [
@@ -99,9 +93,7 @@ module.exports = {
         plugins: [
           {
             resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 960
-            }
+            options: { maxWidth: 960 }
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
@@ -117,13 +109,11 @@ module.exports = {
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-google-analytics',
-      options: { trackingId: 'UA-73379983-2' }
+      options: { trackingId: 'UA-46900286-3' }
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`roboto\:400,400i,500,700`]
-      }
+      resolve: 'gatsby-plugin-google-fonts',
+      options: { fonts: ['roboto\:400,400i,500,700'] }
     },
     {
       resolve: 'gatsby-plugin-sitemap',

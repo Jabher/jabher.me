@@ -2,7 +2,7 @@ import React from 'react';
 import Post from '../Post';
 
 class CategoryTemplateDetails extends React.Component {
-  render() {
+  render () {
     const items = [];
     const { category } = this.props.pathContext;
     const posts = this.props.data.allMarkdownRemark.edges;

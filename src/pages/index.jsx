@@ -4,7 +4,7 @@ import Post from '../components/Post';
 import Sidebar from '../components/Sidebar';
 
 class IndexRoute extends React.Component {
-  render() {
+  render () {
     const items = [];
     const { title, subtitle } = this.props.data.site.siteMetadata;
     const posts = this.props.data.allMarkdownRemark.edges;

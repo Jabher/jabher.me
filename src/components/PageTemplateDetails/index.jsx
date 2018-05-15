@@ -3,7 +3,7 @@ import Sidebar from '../Sidebar';
 import './style.scss';
 
 class PageTemplateDetails extends React.Component {
-  render() {
+  render () {
     const page = this.props.data.markdownRemark;
 
     return (

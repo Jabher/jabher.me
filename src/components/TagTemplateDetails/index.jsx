@@ -2,7 +2,7 @@ import React from 'react';
 import Post from '../Post';
 
 class TagTemplateDetails extends React.Component {
-  render() {
+  render () {
     const items = [];
     const tagTitle = this.props.pathContext.tag;
     const posts = this.props.data.allMarkdownRemark.edges;

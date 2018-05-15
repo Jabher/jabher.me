@@ -5,7 +5,7 @@ import kebabCase from 'lodash/kebabCase';
 import Sidebar from '../components/Sidebar';
 
 class CategoriesRoute extends React.Component {
-  render() {
+  render () {
     const { title } = this.props.data.site.siteMetadata;
     const categories = this.props.data.allMarkdownRemark.group;
 
@@ -22,7 +22,10 @@ class CategoriesRoute extends React.Component {
                   <ul className="categories__list">
                     {categories.map(category => (
                       <li key={category.fieldValue} className="categories__list-item">
-                        <Link to={`/categories/${kebabCase(category.fieldValue)}/`} className="categories__list-item-link">
+                        <Link
+                          to={`/categories/${kebabCase(category.fieldValue)}/`}
+                          className="categories__list-item-link"
+                        >
                           {category.fieldValue} ({category.totalCount})
                         </Link>
                       </li>

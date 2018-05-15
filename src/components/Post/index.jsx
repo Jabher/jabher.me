@@ -4,7 +4,7 @@ import moment from 'moment';
 import './style.scss';
 
 class Post extends React.Component {
-  render() {
+  render () {
     const { title, date, category, description } = this.props.data.node.frontmatter;
     const { slug, categorySlug } = this.props.data.node.fields;
 

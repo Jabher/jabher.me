@@ -7,7 +7,7 @@ import profilePic from '../../pages/photo.jpg';
 import './style.scss';
 
 class Sidebar extends React.Component {
-  render() {
+  render () {
     const { location } = this.props;
     const { author, subtitle, copyright, menu } = this.props.data.site.siteMetadata;
     const isHomePage = get(location, 'pathname', '/') === '/';
@@ -24,11 +24,11 @@ class Sidebar extends React.Component {
             alt={author.name}
           />
         </Link>
-        { isHomePage ? (
+        {isHomePage ? (
           <h1 className="sidebar__author-title">
             <Link className="sidebar__author-title-link" to="/">{author.name}</Link>
           </h1>
-        ) :
+          ) :
           <h2 className="sidebar__author-title">
             <Link className="sidebar__author-title-link" to="/">{author.name}</Link>
           </h2>
@@ -43,9 +43,9 @@ class Sidebar extends React.Component {
         <div className="sidebar__inner">
           <div className="sidebar__author">
             {authorBlock}
+            <Menu data={menu} />
           </div>
           <div>
-            <Menu data={menu} />
             <Links data={author} />
             <p className="sidebar__copyright">
               {copyright}

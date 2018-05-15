@@ -10,6 +10,7 @@
         "graphql": true
     },
     "rules": {
+        "space-before-function-paren": [2, "always"],
         "react/jsx-filename-extension": [0],
         "react/prefer-stateless-function": [0],
         "react/prop-types": [0],

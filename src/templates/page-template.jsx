@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import PageTemplateDetails from '../components/PageTemplateDetails';
 
 class PageTemplate extends React.Component {
-  render() {
+  render () {
     const { title, subtitle } = this.props.data.site.siteMetadata;
     const page = this.props.data.markdownRemark;
     const { title: pageTitle, description: pageDescription } = page.frontmatter;

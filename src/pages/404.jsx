@@ -2,7 +2,7 @@ import React from 'react';
 import Sidebar from '../components/Sidebar';
 
 class NotFoundRoute extends React.Component {
-  render() {
+  render () {
     return (
       <div>
         <Sidebar {...this.props} />

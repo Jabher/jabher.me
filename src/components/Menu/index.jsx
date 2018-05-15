@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 import './style.scss';
 
 class Menu extends React.Component {
-  render() {
+  render () {
     const menu = this.props.data;
 
     const menuBlock = (
